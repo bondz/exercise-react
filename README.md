@@ -14,6 +14,8 @@ npm install
 npm start
 ```
 
+---
+
 Then run the client
 
 ```bash
@@ -29,6 +31,8 @@ cd client
 npm install
 npm start
 ```
+
+---
 
 The server part of this system is already designed and exposes a set of REST endpoints via the `/api` route and a GraphQL endpoint.
 
