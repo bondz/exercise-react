@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server Returns stats at /stats 1`] = `
+Object {
+  "data": Object {
+    "billedTotal": 128224.69,
+    "cashBilledTotal": 69043.8,
+    "female": 20,
+    "male": 30,
+    "noOfCashTrips": 26,
+    "noOfNonCashTrips": 24,
+    "nonCashBilledTotal": 59180.89,
+  },
+}
+`;
