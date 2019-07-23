@@ -18,6 +18,10 @@ const logFormat = process.env.NODE_ENV === 'production' ? 'combined' : 'dev';
 app.use(
   morgan(logFormat, {
     skip: function(_req, res) {
+      if (process.env.NODE_ENV === 'test') {
+        return true;
+      }
+
       return res.statusCode < 400;
     },
     stream: process.stderr,
@@ -27,6 +31,10 @@ app.use(
 app.use(
   morgan(logFormat, {
     skip: function(_req, res) {
+      if (process.env.NODE_ENV === 'test') {
+        return true;
+      }
+
       return res.statusCode >= 400;
     },
     stream: process.stdout,
