@@ -33,7 +33,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # Run typescript
+
       - run: yarn tsc
       # run tests!
       - run: yarn jest
